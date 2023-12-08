@@ -1,0 +1,276 @@
+@import 'fonts.scss';
+@import 'vars.scss';
+
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  text-decoration: none;
+  outline: none;
+  border:none;
+  background: none;
+  box-shadow: none;
+  text-shadow: none;
+  transition-duration: 0.3s;
+  font-family: TacticRoundExd;
+}
+
+a:hover, button:hover {
+  opacity: 0.7;
+}
+
+body {
+  max-width: 1920px;
+  margin: 0 auto;
+  font-style: normal;
+}
+
+.banner {
+  background: linear-gradient(#000, transparent, transparent, transparent),
+   url(../images/banner.jpg) no-repeat 0% 0%/cover;
+  text-align: center;
+  color: $theme-color-white;
+  text-transform: uppercase;
+
+  &__container {
+    display: flex;
+    width: 100%;
+    min-height: 643px;
+    padding-top: 74px;
+    padding-bottom: 40px;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  &__title {
+    font-size: 29px;
+    font-weight: 400;
+    line-height: 32px; 
+    letter-spacing: 1px;
+    padding-left: 15px;
+    margin: 0;
+  }
+
+  &__subtitle {
+    padding-left: 15px;
+    padding-top: 9px;
+    font-size: 42px;
+    font-weight: 500;
+    line-height: 46.2px; 
+    letter-spacing: 0.5px;
+  }
+
+  &__btn {
+    height: auto;
+    min-height: 45px;
+    margin-top: 63px;
+    margin-left: 14px;
+    border-radius: 8px;
+    border: 2px solid $theme-color-red;
+    background: $theme-color-red;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 14.95px; 
+    color: $theme-color-white;
+    text-transform: uppercase;
+    width: 222px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    cursor: pointer;
+  }
+
+  &__list {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-self: flex-end;
+    gap: 140px;
+
+   .item {
+    min-height: 50px;
+    min-width: 190px;
+    max-width: 456px;
+    height: auto;
+    list-style: none;
+    border-radius: 65px 10px 10px 65px; 
+    background: rgb(0,0,0,0.4);
+    display: flex;
+    justify-content: space-around;
+
+      &__block-img {
+        min-width: 80px;
+        height: 65px;
+        background: $theme-color-white;;
+        border-radius: 50%;
+        padding-top: 15px;
+      }
+
+      &__img {
+        width: 49px;
+        height: 49px;
+      }
+
+      &__text {
+        padding-top: 16px;
+        padding-left: 20px;
+        padding-right: 20px;
+        letter-spacing: 1.5px;
+        line-height: 25px;
+        text-align: left;
+      }
+    }
+  }
+}
+
+.advantages {
+  text-align: center;
+  padding-top: 83px;
+  padding-bottom: 93px;
+
+  &__title {
+    color: #1A1A1A;
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 45px; 
+    letter-spacing: 9px;
+    padding-left: 24px;
+    text-transform: uppercase;
+  }
+
+  &__title:after {
+    content: '';
+    width: 70px;
+    height: 3px;
+    background:  $theme-color-red;
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    margin-top: 25px;
+  }
+
+  &__list {
+    display: flex;
+    padding-top: 65px;
+    justify-content: center;
+    gap: 112px;
+
+    .item {
+      list-style: none;
+      display: flex;
+      max-width: 215px;
+      min-height: 125px;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+
+      &__text {
+        color: #282830;
+        text-align: center;
+        font-size: 13px;
+        font-weight: 500;
+        line-height: 15.6px; 
+        letter-spacing: 0.3px;
+      }
+
+      &__img {
+        max-width: 66px;
+        max-height: 66px;
+      }
+    }
+  }
+}
+
+.information-car { 
+  background: #343434;
+  min-height: 698px;
+  padding-top: 35px;
+  padding-bottom: 40px;
+
+  &__block-info{
+     display: flex;
+  gap: 80px;
+  justify-content: flex-end;
+  align-items: flex-end;
+
+  }
+
+  &__summary {
+    max-width: 600px;
+    display: flex;
+    justify-content: center;
+    gap: 105px;
+    flex-direction: column;
+  }
+
+  &__title {
+    color: $theme-color-white;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 42px; 
+    letter-spacing:  7px;
+    padding-left: 320px;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: 40px;
+    grid-row-gap: 33px;
+
+     .item {
+      min-width: 215px;
+      display: flex;
+
+      &__text {
+        padding-left: 20px;
+        padding-top: 5px;
+        color: $theme-color-white;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 20px; 
+        letter-spacing: 0.5px;
+      }
+
+      &__img {
+        max-width: 37px;
+      }
+    }
+  }
+
+  &__btn {
+    display: block;
+    min-width: 558px;
+    min-height: 20px;
+    padding: 12px 56px 16px 54px;
+    border-radius: 8px;
+    border: 1px solid #000;
+    background: $theme-color-white;
+    color: #282830;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18.4px; 
+    text-transform: uppercase;
+    margin: 8px 0;
+    cursor: pointer;
+  
+    &_red {
+      color: $theme-color-white;
+      border: 2px solid $theme-color-red;
+      background: $theme-color-red;
+    }  
+  }
+
+  &__image-car {
+    padding-top: 0px;
+    padding-right: 20px;
+  }
+
+  &__img {
+    border-radius: 20px;
+  }
+}
+
+
+@import 'media.scss';
